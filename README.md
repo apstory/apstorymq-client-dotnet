@@ -1,2 +1,2 @@
 # apstorymq-client-dotnet
-.NET Standard C# Client for ApstoryMQ
+.NET Standard 2.0 C# Client for ApstoryMQ
