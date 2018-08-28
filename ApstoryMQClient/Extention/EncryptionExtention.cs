@@ -179,7 +179,7 @@ namespace ApStory.ApstoryMQClient.Extention
                             cryptoStream.FlushFinalBlock();
                             return Convert.ToBase64String(Memory.ToArray());
                         }
-                        catch (Exception ex)
+                        catch (Exception)
                         {
                             return null;
                         }
@@ -216,7 +216,7 @@ namespace ApStory.ApstoryMQClient.Extention
                             Array.Copy(tmp, 0, ret, 0, len);
                             return Encoding.UTF8.GetString(ret);
                         }
-                        catch (Exception ex)
+                        catch (Exception)
                         {
                             return null;
                         }
