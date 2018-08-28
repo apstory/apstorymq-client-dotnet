@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ApStory.PubSub.Client.DotNetStandard.Encryption.Model
+namespace Apstory.ApstoryMQClient.Encryption.Model
 {
     public class AESKey
     {

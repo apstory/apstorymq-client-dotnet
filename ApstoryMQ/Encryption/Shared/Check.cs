@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ApStory.PubSub.Client.DotNetStandard.Encryption.Shared
+namespace Apstory.ApstoryMQClient.Encryption.Shared
 {
     public class Check
     {

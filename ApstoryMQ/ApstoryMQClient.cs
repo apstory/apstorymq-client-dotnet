@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using ApStory.ApstoryMQClient.Extention;
 
-namespace Apstory.ApstoryMQ
+namespace Apstory.ApstoryMQClient
 {
     public class ApstoryMQClient
     {

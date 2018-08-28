@@ -1,5 +1,5 @@
-﻿using ApStory.PubSub.Client.DotNetStandard.Encryption.Model;
-using ApStory.PubSub.Client.DotNetStandard.Encryption.Shared;
+﻿using Apstory.ApstoryMQClient.Encryption.Model;
+using Apstory.ApstoryMQClient.Encryption.Shared;
 using System;
 using System.IO;
 using System.Security.Cryptography;
