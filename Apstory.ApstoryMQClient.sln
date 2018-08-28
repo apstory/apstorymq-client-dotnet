@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApstoryMQClient", "client\ApstoryMQClient.csproj", "{389D4EA2-2371-4964-BBB7-6E3591C9B5DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{ECF54F0E-BB44-4538-A002-C84E76643A8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{389D4EA2-2371-4964-BBB7-6E3591C9B5DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389D4EA2-2371-4964-BBB7-6E3591C9B5DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389D4EA2-2371-4964-BBB7-6E3591C9B5DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389D4EA2-2371-4964-BBB7-6E3591C9B5DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{389D4EA2-2371-4964-BBB7-6E3591C9B5DE} = {ECF54F0E-BB44-4538-A002-C84E76643A8F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A328B90-949C-4998-AA4C-371FB22739D2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>ApstoryMQ</PackageId>
+    <Authors>Apstory (PTY) Ltd</Authors>
+    <Product>ApstoryMQ</Product>
+    <Description>.NETStandard Client to publish and subscribe to messages on ApstoryMQ. Please contact apstoryza@gmail.com to request API documentation and a key.</Description>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.0.4</Version>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
+    <AssemblyName>Apstory.ApstoryMQClient</AssemblyName>
+    <RootNamespace>Apstory.ApstoryMQClient</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ApstoryMQModel" Version="1.0.1747" />
+    <PackageReference Include="RestSharp" Version="106.*" Condition="'$(TargetFramework)' == 'net471'" />
+    <PackageReference Include="RestSharp" Version="106.*" Condition="'$(TargetFramework)' == 'net462'" />
+    <PackageReference Include="RestSharp" Version="106.*" Condition="'$(TargetFramework)' == 'netstandard2.0'" />
+  </ItemGroup>
+
+</Project>
