@@ -5,7 +5,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace ApStory.PubSub.Client.DotNetStandard.Extentions
+namespace ApStory.ApstoryMQClient.Extention
 {
     public static class EncryptionExtention
     {

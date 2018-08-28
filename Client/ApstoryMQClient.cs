@@ -3,7 +3,7 @@ using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ApStory.PubSub.Client.DotNetStandard.Extentions;
+using ApStory.ApstoryMQClient.Extention;
 
 namespace Apstory.ApstoryMQ
 {
