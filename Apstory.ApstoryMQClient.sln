@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApstoryMQClient", "ApstoryMQClient", "{ECF54F0E-BB44-4538-A002-C84E76643A8F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApstoryMQ", "ApstoryMQ", "{ECF54F0E-BB44-4538-A002-C84E76643A8F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApstoryMQClient", "ApstoryMQClient\ApstoryMQClient.csproj", "{734F489D-B17C-4EBD-87B8-C11418E582BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApstoryMQClient", "ApstoryMQ\ApstoryMQClient.csproj", "{2E2D6D95-CFBC-4066-A645-A27F28838D77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{734F489D-B17C-4EBD-87B8-C11418E582BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{734F489D-B17C-4EBD-87B8-C11418E582BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{734F489D-B17C-4EBD-87B8-C11418E582BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{734F489D-B17C-4EBD-87B8-C11418E582BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E2D6D95-CFBC-4066-A645-A27F28838D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2D6D95-CFBC-4066-A645-A27F28838D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2D6D95-CFBC-4066-A645-A27F28838D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2D6D95-CFBC-4066-A645-A27F28838D77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{734F489D-B17C-4EBD-87B8-C11418E582BE} = {ECF54F0E-BB44-4538-A002-C84E76643A8F}
+		{2E2D6D95-CFBC-4066-A645-A27F28838D77} = {ECF54F0E-BB44-4538-A002-C84E76643A8F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A328B90-949C-4998-AA4C-371FB22739D2}
