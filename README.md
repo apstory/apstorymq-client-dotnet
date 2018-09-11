@@ -2,3 +2,9 @@
 
 # apstorymq-client-dotnet
 .NET Standard 2.0 C# Client for ApstoryMQ
+
+# ApstoryMQ API Documentation
+https://apstorymqapi.azurewebsites.net/index.html
+
+# API Key
+To get an API key please contact development@apstory.co.za
