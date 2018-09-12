@@ -185,7 +185,7 @@ namespace Apstory.ApstoryMQClient
             return response.Data;
         }
 
-        public void CreateSubscription(string topic = "")
+        public bool CreateSubscription(string topic = "")
         {
             _topic = topic == "" ? _topic : topic;
             var restClient = new RestClient(_apiUrl);
@@ -197,10 +197,11 @@ namespace Apstory.ApstoryMQClient
             if (!response.IsSuccessful)
             {
                 throw new Exception(response.Content);
-            }            
+            }
+            return response.Data;
         }
 
-        public async Task CreateSubscriptionAsync(string topic = "")
+        public async Task<bool> CreateSubscriptionAsync(string topic = "")
         {
             _topic = topic == "" ? _topic : topic;
             var restClient = new RestClient(_apiUrl);
@@ -213,9 +214,10 @@ namespace Apstory.ApstoryMQClient
             {
                 throw new Exception(response.Content);
             }
+            return response.Data;
         }
 
-        public void DeleteSubscription(string topic = "")
+        public bool DeleteSubscription(string topic = "")
         {
             _topic = topic == "" ? _topic : topic;
             var restClient = new RestClient(_apiUrl);
@@ -228,9 +230,10 @@ namespace Apstory.ApstoryMQClient
             {
                 throw new Exception(response.Content);
             }
+            return response.Data;
         }
 
-        public async Task DeleteSubscriptionAsync(string topic = "")
+        public async Task<bool> DeleteSubscriptionAsync(string topic = "")
         {
             _topic = topic == "" ? _topic : topic;
             var restClient = new RestClient(_apiUrl);
@@ -243,6 +246,7 @@ namespace Apstory.ApstoryMQClient
             {
                 throw new Exception(response.Content);
             }
+            return response.Data;
         }
 
         private List<Message> EncryptedMessageList(List<Message> message)
