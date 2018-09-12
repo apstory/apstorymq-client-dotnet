@@ -189,11 +189,11 @@ namespace Apstory.ApstoryMQClient
         {
             _topic = topic == "" ? _topic : topic;
             var restClient = new RestClient(_apiUrl);
-            var restRequest = new RestRequest("message?key=" + _key + "&client=" + _client + "&topic=" + _topic, Method.GET)
+            var restRequest = new RestRequest("subscriptions?key=" + _key + "&client=" + _client + "&topic=" + _topic, Method.GET)
             {
                 RequestFormat = DataFormat.Json,
             };
-            var response = restClient.Execute<Messages>(restRequest);
+            var response = restClient.Execute<bool>(restRequest);
             if (!response.IsSuccessful)
             {
                 throw new Exception(response.Content);
@@ -204,11 +204,41 @@ namespace Apstory.ApstoryMQClient
         {
             _topic = topic == "" ? _topic : topic;
             var restClient = new RestClient(_apiUrl);
-            var restRequest = new RestRequest("message?key=" + _key + "&client=" + _client + "&topic=" + _topic, Method.GET)
+            var restRequest = new RestRequest("subscriptions?key=" + _key + "&client=" + _client + "&topic=" + _topic, Method.GET)
             {
                 RequestFormat = DataFormat.Json,
             };
-            var response = await restClient.ExecuteTaskAsync<Messages>(restRequest);
+            var response = await restClient.ExecuteTaskAsync<bool>(restRequest);
+            if (!response.IsSuccessful)
+            {
+                throw new Exception(response.Content);
+            }
+        }
+
+        public void DeleteSubscription(string topic = "")
+        {
+            _topic = topic == "" ? _topic : topic;
+            var restClient = new RestClient(_apiUrl);
+            var restRequest = new RestRequest("subscriptions?key=" + _key + "&client=" + _client + "&topic=" + _topic, Method.DELETE)
+            {
+                RequestFormat = DataFormat.Json,
+            };
+            var response = restClient.Execute<bool>(restRequest);
+            if (!response.IsSuccessful)
+            {
+                throw new Exception(response.Content);
+            }
+        }
+
+        public async Task DeleteSubscriptionAsync(string topic = "")
+        {
+            _topic = topic == "" ? _topic : topic;
+            var restClient = new RestClient(_apiUrl);
+            var restRequest = new RestRequest("subscriptions?key=" + _key + "&client=" + _client + "&topic=" + _topic, Method.DELETE)
+            {
+                RequestFormat = DataFormat.Json,
+            };
+            var response = await restClient.ExecuteTaskAsync<bool>(restRequest);
             if (!response.IsSuccessful)
             {
                 throw new Exception(response.Content);
