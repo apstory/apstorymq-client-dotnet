@@ -34,11 +34,11 @@ namespace Apstory.ApstoryMQClient
             };
             if (_cipherKey != string.Empty)
             {
-                restRequest.AddBody(EncryptedMessageList(message));
+                restRequest.AddJsonBody(EncryptedMessageList(message));
             }
             else
             {
-                restRequest.AddBody(message);
+                restRequest.AddJsonBody(message);
             }
             var response = restClient.Execute<List<Message>>(restRequest);
             if (!response.IsSuccessful)
@@ -58,13 +58,13 @@ namespace Apstory.ApstoryMQClient
             };
             if (_cipherKey != string.Empty)
             {
-                restRequest.AddBody(EncryptedMessageList(message));
+                restRequest.AddJsonBody(EncryptedMessageList(message));
             }
             else
             {
-                restRequest.AddBody(message);
+                restRequest.AddJsonBody(message);
             }
-            var response = await restClient.ExecuteTaskAsync<List<Message>>(restRequest);
+            var response = await restClient.ExecuteAsync<List<Message>>(restRequest);
             if (!response.IsSuccessful)
             {
                 throw new Exception(response.Content);
@@ -103,7 +103,7 @@ namespace Apstory.ApstoryMQClient
             {
                 RequestFormat = DataFormat.Json,
             };
-            var response = await restClient.ExecuteTaskAsync<Messages>(restRequest);
+            var response = await restClient.ExecuteAsync<Messages>(restRequest);
             if (!response.IsSuccessful)
             {
                 throw new Exception(response.Content);
@@ -143,7 +143,7 @@ namespace Apstory.ApstoryMQClient
             {
                 RequestFormat = DataFormat.Json
             };
-            var response = await restClient.ExecuteTaskAsync<bool>(restRequest);
+            var response = await restClient.ExecuteAsync<bool>(restRequest);
             if (!response.IsSuccessful)
             {
                 throw new Exception(response.Content);
@@ -159,7 +159,7 @@ namespace Apstory.ApstoryMQClient
             {
                 RequestFormat = DataFormat.Json
             };
-            restRequest.AddBody(message);
+            restRequest.AddJsonBody(message);
             var response = restClient.Execute<List<Message>>(restRequest);
             if (!response.IsSuccessful)
             {
@@ -176,8 +176,8 @@ namespace Apstory.ApstoryMQClient
             {
                 RequestFormat = DataFormat.Json
             };
-            restRequest.AddBody(message);
-            var response = await restClient.ExecuteTaskAsync<List<Message>>(restRequest);
+            restRequest.AddJsonBody(message);
+            var response = await restClient.ExecuteAsync<List<Message>>(restRequest);
             if (!response.IsSuccessful)
             {
                 throw new Exception(response.Content);
@@ -209,7 +209,7 @@ namespace Apstory.ApstoryMQClient
             {
                 RequestFormat = DataFormat.Json,
             };
-            var response = await restClient.ExecuteTaskAsync<bool>(restRequest);
+            var response = await restClient.ExecuteAsync<bool>(restRequest);
             if (!response.IsSuccessful)
             {
                 throw new Exception(response.Content);
@@ -241,7 +241,7 @@ namespace Apstory.ApstoryMQClient
             {
                 RequestFormat = DataFormat.Json,
             };
-            var response = await restClient.ExecuteTaskAsync<bool>(restRequest);
+            var response = await restClient.ExecuteAsync<bool>(restRequest);
             if (!response.IsSuccessful)
             {
                 throw new Exception(response.Content);
