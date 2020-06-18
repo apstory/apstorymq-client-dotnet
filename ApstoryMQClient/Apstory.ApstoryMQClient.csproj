@@ -7,19 +7,19 @@
     <Product>ApstoryMQ</Product>
     <Description>.NETStandard Client to publish and subscribe to messages on ApstoryMQ. Please contact apstoryza@gmail.com to request API documentation and a key.</Description>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.0.5</Version>
-    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <Version>1.0.9</Version>
+    <AssemblyVersion>1.0.9.0</AssemblyVersion>
     <AssemblyName>Apstory.ApstoryMQClient</AssemblyName>
     <RootNamespace>Apstory.ApstoryMQClient</RootNamespace>
     <UserSecretsId>17e1f2d4-eeca-47e7-bd07-1b41bb76c638</UserSecretsId>
-    <FileVersion>1.0.5.0</FileVersion>
+    <FileVersion>1.0.9.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="ApstoryMQModel" Version="1.0.1747" />
     <PackageReference Include="RestSharp" Version="106.*" Condition="'$(TargetFramework)' == 'net471'" />
     <PackageReference Include="RestSharp" Version="106.*" Condition="'$(TargetFramework)' == 'net462'" />
-    <PackageReference Include="RestSharp" Version="106.11.4" Condition="'$(TargetFramework)' == 'netstandard2.0'" />
+    <PackageReference Include="RestSharp" Version="106.*" Condition="'$(TargetFramework)' == 'netstandard2.0'" />
   </ItemGroup>
 
 </Project>
